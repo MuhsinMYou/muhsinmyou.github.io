@@ -1,4 +1,4 @@
-# Muhsin M. You | Cinematic Portfolio
+# Muhsin MYou | Cinematic Portfolio
 
 A premium, interactive portfolio website designed with a **"Cinematic Dark"** aesthetic. Features a sophisticated **Espresso-to-Black** gradient theme, liquid glassmorphism, and seamless scroll-triggered animations to showcase creative technology work.
 
@@ -41,8 +41,8 @@ dis**Theme**: `Dark Black + Semi-Dark Brown/Bronze`
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/MuhsinMYou/portfolio-2025.git
-    cd portfolio-2025
+    git clone https://github.com/MuhsinMYou/muhsin-portfolio-2025
+    cd muhsin-portfolio-2025
     ```
 
 2.  **Install dependencies**:

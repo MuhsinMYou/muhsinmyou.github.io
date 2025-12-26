@@ -1,20 +1,76 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Muhsin M. You | Cinematic Portfolio
 
-# Run and deploy your AI Studio app
+A premium, interactive portfolio website designed with a **"Cinematic Dark"** aesthetic. Features a sophisticated **Espresso-to-Black** gradient theme, liquid glassmorphism, and seamless scroll-triggered animations to showcase creative technology work.
 
-This contains everything you need to run your app locally.
+![Portfolio Preview](public/preview.png)
 
-View your app in AI Studio: https://ai.studio/apps/drive/187GZrHmqTq7vewHlzIBS53Z3481bybBK
+## 🎨 Design System
 
-## Run Locally
+dis**Theme**: `Dark Black + Semi-Dark Brown/Bronze`
+- **Background**: Linear Gradient (`#2a1e16` -> `#050505` -> `#000000`)
+- **Primary Accent**: Bronze / Semi-Dark Brown (`#8B5E3C`)
+- **Secondary Accent**: Sienna / Copper (`#A0522D`)
+- **Text**: Warm Stone (`#d6d3d1`)
+- **Glass Effect**: Liquid glass with warm, earthy tints.
 
-**Prerequisites:**  Node.js
+**Typography**:
+- **Headings**: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk) (Display, Technical, Sci-fi feel)
+- **Body**: [Inter](https://fonts.google.com/specimen/Inter) (Clean, Legible)
+- **Accents**: Monospace (Code/Terminal vibe)
 
+## 🛠️ Tech Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+
+## ✨ Key Features
+
+- **Cinematic Hero**: Full-screen video background with a warm gradient overlay and staggered text reveals.
+- **Liquid Glassmorphism**: Custom CSS utilities for glass panels with dynamic blur and lighting effects.
+- **Interactive Elements**:
+    - Fluid custom cursor
+    - Magnetic buttons with gradient borders
+    - Scroll-triggered parallax effects
+    - Hover-responsive cards (Expertise, Projects)
+- **Performance Optimized**: Lazy loading, optimized assets, and smooth 60fps animations.
+
+## 🚀 Getting Started
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/MuhsinMYou/portfolio-2025.git
+    cd portfolio-2025
+    ```
+
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+
+3.  **Run locally**:
+    ```bash
+    npm run dev
+    ```
+
+4.  **Build for production**:
+    ```bash
+    npm run build
+    ```
+
+## 📂 Project Structure
+
+```
+src/
+├── components/     # UI Components (Hero, Navbar, Projects, etc.)
+├── components/ui/  # Reusable UI elements (Cursor, Noise)
+├── types/          # TypeScript interfaces
+├── constants.ts    # Content data (Images, Text, Links)
+├── index.css       # Global styles & Tailwind directives
+└── App.tsx         # Main application layout
+```
+
+---
+*Designed & Developed by Muhsin M. You*

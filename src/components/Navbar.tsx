@@ -29,8 +29,8 @@ const Navbar: React.FC = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className={`relative flex items-center justify-between px-8 py-4 transition-all duration-500 rounded-2xl ${scrolled || isOpen
-          ? 'w-full max-w-6xl liquid-glass-heavy'
-          : 'w-full max-w-5xl liquid-glass'
+          ? 'w-full max-w-6xl bg-[#8B5E3C]/10 backdrop-blur-2xl border border-white/10 shadow-lg'
+          : 'w-full max-w-5xl bg-[#8B5E3C]/5 backdrop-blur-xl border border-white/5 shadow-md'
           }`}
       >
         {/* Logo */}

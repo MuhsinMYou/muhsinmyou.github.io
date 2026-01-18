@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Expertise from './components/Expertise';
@@ -10,6 +11,7 @@ import Testimonials from './components/Testimonials';
 import ContactFooter from './components/ContactFooter';
 import NoiseOverlay from './components/ui/NoiseOverlay';
 import FluidCursor from './components/ui/FluidCursor';
+import AllWorksPage from './pages/AllWorksPage';
 
 // Animated interactive background blobs
 const LiquidBackground = () => {
@@ -54,32 +56,49 @@ const LiquidBackground = () => {
   );
 };
 
+// Scroll to top wrapper
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
+
+const HomePage = () => (
+  <>
+    <Navbar />
+    <main className="relative z-10">
+      <Hero />
+      <div className="space-y-4">
+        <Expertise />
+        <div id="recent-works">
+          <RecentWorks />
+        </div>
+        <Projects />
+        <Journey />
+        <Testimonials />
+      </div>
+      <ContactFooter />
+    </main>
+  </>
+);
+
 function App() {
   return (
-    <div className="relative min-h-screen bg-transparent text-stone-300 selection:bg-primary selection:text-white font-sans cursor-none">
-      <LiquidBackground />
-      <FluidCursor />
-      <NoiseOverlay />
+    <Router basename={import.meta.env.BASE_URL}>
+      <ScrollToTop />
+      <div className="relative min-h-screen bg-transparent text-stone-300 selection:bg-primary selection:text-white font-sans cursor-none">
+        <LiquidBackground />
+        <FluidCursor />
+        <NoiseOverlay />
 
-      <Navbar />
-
-      <main className="relative z-10">
-        <Hero />
-
-        {/* Adds visual separation/breathing room */}
-        <div className="space-y-4">
-          <Expertise />
-          <div id="recent-works">
-            <RecentWorks />
-          </div>
-          <Projects />
-          <Journey />
-          <Testimonials />
-        </div>
-
-        <ContactFooter />
-      </main>
-    </div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/all-works" element={<AllWorksPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

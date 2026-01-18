@@ -1,9 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: 'Space Grotesk', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
+  --font-mono: 'Space Grotesk', monospace;
+}
+
+/* Fonts handled via @fontsource/space-grotesk in index.tsx */
+
 body {
   background: linear-gradient(to bottom right, #2a1e16 0%, #050505 50%, #000000 100%);
   background-attachment: fixed;
   color: #e0d5c1;
+  font-family: 'Space Grotesk', sans-serif !important;
   /* Light cream text for better contrast on brown */
   overflow-x: hidden;
 }

@@ -15,8 +15,10 @@ export default {
                 'glass-heavy': 'rgba(139, 94, 60, 0.1)',
             },
             fontFamily: {
-                sans: ['Inter', 'sans-serif'],
+                sans: ['Space Grotesk', 'sans-serif'],
                 display: ['Space Grotesk', 'sans-serif'],
+                body: ['Space Grotesk', 'sans-serif'],
+                mono: ['Space Grotesk', 'sans-serif'],
             },
             animation: {
                 'spin-slow': 'spin 12s linear infinite',

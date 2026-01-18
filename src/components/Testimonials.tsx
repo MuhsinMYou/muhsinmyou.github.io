@@ -16,8 +16,8 @@ const Testimonials: React.FC = () => {
       <div className="sticky top-0 h-screen flex flex-col justify-center overflow-hidden">
 
         <div className="px-6 md:px-12 lg:px-24 mb-16">
-          <h2 className="text-sm font-mono text-secondary tracking-widest uppercase mb-2">Endorsements</h2>
-          <h3 className="text-4xl font-display font-bold text-white">What they <span className="text-primary text-glow">say</span></h3>
+          <h2 className="text-sm text-secondary tracking-widest uppercase mb-2">Endorsements</h2>
+          <h3 className="text-4xl md:text-5xl font-bold text-white">Their Words <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-400">About Me</span></h3>
         </div>
 
         <motion.div style={{ x }} className="flex gap-8 px-6 md:px-12 lg:px-24 w-max">

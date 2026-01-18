@@ -8,8 +8,8 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="relative py-32 z-10">
       <div className="px-6 md:px-12 lg:px-24 mb-24">
-        <h2 className="text-sm font-mono text-secondary tracking-widest uppercase mb-2">Selected Works</h2>
-        <h3 className="text-4xl md:text-5xl font-display font-bold text-white">Case <span className="text-primary text-glow">Studies</span></h3>
+        <h2 className="text-sm text-secondary tracking-widest uppercase mb-2">Research and Projects</h2>
+        <h3 className="text-4xl md:text-5xl font-bold text-white">Case <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-orange-400">Studies</span></h3>
       </div>
 
       <div className="space-y-40">
@@ -71,13 +71,13 @@ const ProjectCard: React.FC<{ project: ProjectItem; index: number }> = ({ projec
         >
           <div className="flex flex-wrap gap-2">
             {project.tags.map(tag => (
-              <span key={tag} className="px-4 py-1.5 text-xs font-mono font-medium rounded-full bg-white/5 border border-white/10 text-secondary backdrop-blur-md">
+              <span key={tag} className="px-4 py-1.5 text-xs font-medium rounded-full bg-white/5 border border-white/10 text-secondary backdrop-blur-md">
                 {tag}
               </span>
             ))}
           </div>
 
-          <h3 className="text-5xl font-display font-bold text-white leading-tight">{project.title}</h3>
+          <h3 className="text-5xl font-bold text-white leading-tight">{project.title}</h3>
 
           <p className="text-stone-300 text-lg leading-relaxed font-light liquid-glass-heavy p-6 rounded-2xl">
             {project.description}

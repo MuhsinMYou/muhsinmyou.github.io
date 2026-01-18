@@ -5,9 +5,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'Expertise', href: '#expertise' },
-  { name: 'Selected Works', href: '#projects' },
+  { name: 'Research', href: '#projects' },
   { name: 'Journey', href: '#journey' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Gallery', href: '#recentworks' },
 ];
 
 const Navbar: React.FC = () => {

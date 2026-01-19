@@ -1,5 +1,7 @@
 # Muhsin MYou | Creative Technologist Portfolio
 
+**[🌐 Live Site: https://muhsinmyou.github.io](https://muhsinmyou.github.io)**
+
 A premium, interactive portfolio website designed with a **"Cinematic Dark"** aesthetic. Features a sophisticated **Orange-on-Black** gradient theme, liquid glassmorphism, and seamless scroll-triggered animations to showcase creative technology work.
 
 ## 🎨 Design System
@@ -42,8 +44,8 @@ A premium, interactive portfolio website designed with a **"Cinematic Dark"** ae
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/MuhsinMYou/portfolio25.git
-    cd portfolio25
+    git clone https://github.com/MuhsinMYou/muhsinmyou.github.io.git
+    cd muhsinmyou.github.io
     ```
 
 2.  **Install dependencies**:

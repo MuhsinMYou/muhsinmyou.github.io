@@ -136,33 +136,39 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.5, duration: 1 }}
-              className="flex flex-wrap justify-center items-center gap-4 mt-8"
+              className="flex flex-col items-center gap-6 mt-8 w-full xl:flex-row xl:justify-center xl:gap-8"
             >
-              <motion.button
-                onClick={() => setIsResumeOpen(true)}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="group relative inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-700 to-orange-400 text-white font-bold text-base rounded-full overflow-hidden shadow-[0_0_30px_rgba(249,115,22,0.4)] hover:shadow-none transition-all duration-300 pointer-events-auto cursor-pointer"
-              >
-                <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-                <FileText className="w-5 h-5 relative z-10" />
-                <span className="relative z-10 font-sans">Resume</span>
-              </motion.button>
+              {/* Primary Actions - Side by Side on Mobile */}
+              <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4">
+                <motion.button
+                  onClick={() => setIsResumeOpen(true)}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="group relative inline-flex items-center gap-2 px-5 py-3 md:px-6 bg-gradient-to-r from-orange-700 to-orange-400 text-white font-bold text-sm md:text-base rounded-full overflow-hidden shadow-[0_0_30px_rgba(249,115,22,0.4)] hover:shadow-none transition-all duration-300 pointer-events-auto cursor-pointer"
+                >
+                  <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+                  <FileText className="w-4 h-4 md:w-5 md:h-5 relative z-10" />
+                  <span className="relative z-10 font-sans">Resume</span>
+                </motion.button>
 
-              <SocialLink href="https://github.com/MuhsinMYou" icon={Github} />
-              <SocialLink href="https://linkedin.com/in/muhsinponpara" icon={Linkedin} />
-              <SocialLink href="https://instagram.com/muhhs.in" icon={Instagram} />
+                <motion.a
+                  href="#contact"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="group relative inline-flex items-center gap-2 px-5 py-3 md:px-6 bg-gradient-to-r from-orange-700 to-orange-400 text-white font-bold text-sm md:text-base rounded-full overflow-hidden shadow-[0_0_30px_rgba(249,115,22,0.4)] hover:shadow-none transition-all duration-300 pointer-events-auto cursor-pointer"
+                >
+                  <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+                  <Mail className="w-4 h-4 md:w-5 md:h-5 relative z-10" />
+                  <span className="relative z-10 font-sans">Connect Me</span>
+                </motion.a>
+              </div>
 
-              <motion.a
-                href="#contact"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="group relative inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-700 to-orange-400 text-white font-bold text-base rounded-full overflow-hidden shadow-[0_0_30px_rgba(249,115,22,0.4)] hover:shadow-none transition-all duration-300 pointer-events-auto cursor-pointer"
-              >
-                <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-                <Mail className="w-5 h-5 relative z-10" />
-                <span className="relative z-10 font-sans">Connect Me</span>
-              </motion.a>
+              {/* Social Links - Row Below on Mobile */}
+              <div className="flex items-center gap-3 sm:gap-4">
+                <SocialLink href="https://github.com/MuhsinMYou" icon={Github} />
+                <SocialLink href="https://linkedin.com/in/muhsinponpara" icon={Linkedin} />
+                <SocialLink href="https://instagram.com/muhhs.in" icon={Instagram} />
+              </div>
             </motion.div>
           </div>
 

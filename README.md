@@ -1,48 +1,49 @@
-# Muhsin MYou | Cinematic Portfolio
+# Muhsin MYou | Creative Technologist Portfolio
 
-A premium, interactive portfolio website designed with a **"Cinematic Dark"** aesthetic. Features a sophisticated **Espresso-to-Black** gradient theme, liquid glassmorphism, and seamless scroll-triggered animations to showcase creative technology work.
-
-![Portfolio Preview](public/preview.png)
+A premium, interactive portfolio website designed with a **"Cinematic Dark"** aesthetic. Features a sophisticated **Orange-on-Black** gradient theme, liquid glassmorphism, and seamless scroll-triggered animations to showcase creative technology work.
 
 ## 🎨 Design System
 
-dis**Theme**: `Dark Black + Semi-Dark Brown/Bronze`
-- **Background**: Linear Gradient (`#2a1e16` -> `#050505` -> `#000000`)
-- **Primary Accent**: Bronze / Semi-Dark Brown (`#8B5E3C`)
-- **Secondary Accent**: Sienna / Copper (`#A0522D`)
+**Theme**: `Cinematic Dark + Vibrant Orange`
+- **Background**: Deep gradients (`#2a1e16` -> `#050505` -> `#000000`)
+- **Primary Accent**: Vibrant Orange (`#c2410c` -> `#fb923c`)
+- **Secondary Accent**: Bronze / Sienna (`#A0522D`)
 - **Text**: Warm Stone (`#d6d3d1`)
-- **Glass Effect**: Liquid glass with warm, earthy tints.
+- **Glass Effect**: Liquid glass with warm, earthy tints and frosted blur.
 
 **Typography**:
-- **Headings**: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk) (Display, Technical, Sci-fi feel)
-- **Body**: [Inter](https://fonts.google.com/specimen/Inter) (Clean, Legible)
-- **Accents**: Monospace (Code/Terminal vibe)
+- **Primary**: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk) (Self-hosted for performance and privacy)
+- **Monospace**: Space Grotesk (Used for technical accents)
 
 ## 🛠️ Tech Stack
 
 - **Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
 - **Icons**: [Lucide React](https://lucide.dev/)
+- **Fonts**: `@fontsource/space-grotesk`
 
 ## ✨ Key Features
 
-- **Cinematic Hero**: Full-screen video background with a warm gradient overlay and staggered text reveals.
+- **Cinematic Hero**: Full-screen video background with dynamic text reveals and gradients.
 - **Liquid Glassmorphism**: Custom CSS utilities for glass panels with dynamic blur and lighting effects.
 - **Interactive Elements**:
-    - Fluid custom cursor
-    - Magnetic buttons with gradient borders
-    - Scroll-triggered parallax effects
-    - Hover-responsive cards (Expertise, Projects)
-- **Performance Optimized**: Lazy loading, optimized assets, and smooth 60fps animations.
+    - **Draggable Cards**: "Featured Works" section with scattered, draggable polaroid-style cards.
+    - **Resume Preview**: Integrated Google Docs resume viewer with PDF download.
+    - **Magnetic Buttons**: Interactive buttons with hover shimmer and glow effects.
+    - **Scroll Animations**: Parallax effects and scroll-triggered reveals.
+- **Functional Contact Form**:
+    - **FormSubmit**: Direct email delivery.
+    - **Google Sheets**: Automatic backup of form submissions.
+- **Performance Optimized**: Self-hosted fonts, lazy loading, and smooth 60fps animations.
 
 ## 🚀 Getting Started
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/MuhsinMYou/muhsin-portfolio-2025
-    cd muhsin-portfolio-2025
+    git clone https://github.com/MuhsinMYou/portfolio25.git
+    cd portfolio25
     ```
 
 2.  **Install dependencies**:
@@ -60,12 +61,17 @@ dis**Theme**: `Dark Black + Semi-Dark Brown/Bronze`
     npm run build
     ```
 
+5.  **Deploy to GitHub Pages**:
+    ```bash
+    npm run deploy
+    ```
+
 ## 📂 Project Structure
 
 ```
 src/
-├── components/     # UI Components (Hero, Navbar, Projects, etc.)
-├── components/ui/  # Reusable UI elements (Cursor, Noise)
+├── components/     # UI Components (Hero, Navbar, RecentWorks, etc.)
+├── components/ui/  # Reusable UI elements
 ├── types/          # TypeScript interfaces
 ├── constants.ts    # Content data (Images, Text, Links)
 ├── index.css       # Global styles & Tailwind directives
